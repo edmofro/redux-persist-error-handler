@@ -2,6 +2,8 @@
 
 Provides a higher order component to wrap your app in, which purges the redux-persist persisted store if there is a fatal error. This avoids your app getting trapped in an infinite crash loop, where dodgy state causes a crash, and the same dodgy state is then rehydrated, causing another crash. Of course, you should fix the cause of the dodgy state, but let's at least be a bit graceful to users in the mean time.
 
+Will only purge for production builds, so that you can still debug when __DEV__ is true.
+
 ##Usage
 ```javascript
 import React from 'react';
