@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export class ErrorHandler extends React.Component {
   componentWillMount() {
@@ -20,6 +21,6 @@ export class ErrorHandler extends React.Component {
 }
 
 ErrorHandler.propTypes = {
-  children: React.PropTypes.node.isRequired,
-  persistedStore: React.PropTypes.object.isRequired,
+  children: PropTypes.node.isRequired,
+  persistedStore: PropTypes.object.isRequired,
 };
