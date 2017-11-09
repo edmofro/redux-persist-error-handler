@@ -1,7 +1,8 @@
 {
   "name": "redux-persist-error-handler",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A higher order component to avoid infinite loops when using redux persist with react native",
+  "homepage": "https://github.com/edmofro/redux-persist-error-handler",
   "repository": "",
   "author": "Edwin Monk-Fromont",
   "license": "MIT",
@@ -19,5 +20,8 @@
   },
   "peerDependencies": {
     "react": "*"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.0"
   }
 }
